@@ -3,6 +3,10 @@
 This is just a practise repository for learning Assembly
 It implements a program to print numbers from commandline arguments
 
+#### LANGUAGE
+
+This repository uses X86 Assembly with AT&T syntax
+
 #### USAGE
 
 There is a bash script that can be used to build and link all the needed parts of the program
