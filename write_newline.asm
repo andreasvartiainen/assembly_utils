@@ -1,3 +1,7 @@
+# PURPOSE: Print a newline character
+#
+# RETURN: nonthing
+
 .section .data
   newline:
     .ascii "\n"

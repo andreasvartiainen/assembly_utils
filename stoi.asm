@@ -1,5 +1,9 @@
-.equ ST_STR, 8 # position for the string input
-.equ ST_VALUE, -4 # position for value
+# PURPOSE: Converts an input string to a number
+#
+# RETURN: Resulting number is returned through %eax
+
+.equ ST_STR, 8    # Null terminated string to be converted to a number
+.equ ST_VALUE, -4 # Local variable to store the value to be returned in
 .section .text
 .globl stoi
 .type stoi, @function

@@ -2,10 +2,11 @@
 #
 # void itos(char *buf, int buf_size, int value)
 #
-# doesnt return anything
-.equ ST_BUF, 8
-.equ ST_BUF_SIZE, 12
-.equ ST_VALUE, 16
+# RETURN: doesnt return anything
+
+.equ ST_BUF, 8        # Buffer to save the string in
+.equ ST_BUF_SIZE, 12  # Size of the buffer
+.equ ST_VALUE, 16     # Value to be converted
 .section .text
 .globl itos
 .type itos, @function

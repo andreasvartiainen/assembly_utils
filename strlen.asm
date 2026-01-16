@@ -1,4 +1,8 @@
-.equ ST_STR, 8
+# PURPOSE: Get a length of a null terminate string
+#
+# RETURN: returns the length of the string through %eax
+
+.equ ST_STR, 8 # String input
 .section .text 
 .globl strlen
 .type strlen, @function
