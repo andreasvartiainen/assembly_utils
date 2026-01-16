@@ -77,8 +77,10 @@ trav_end:
   decl %ebx # step back the pointer
 
 r_loop_start:
-  cmpl %ebx, %eax # if the pointers are the same
-  je r_loop_end
+  cmpl %ebx, %eax # compare pointers (addresses)
+  jge r_loop_end  # if eax is bigger than ebx which
+                  # indicates that we have passed the middle point
+                  # jump to end
 
   ## swap the contents of the pointers ##
   movb (%ebx), %cl
